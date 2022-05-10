@@ -13,14 +13,14 @@ const DisplayMusic = (props) => {
             </tr>
             </thead>
             <tbody>
-            {props.parentMusic.map((music, index) => {
+            {props.parentMusic.map((songs, index) => {
                 return (
                 <tr>
-                    <td>{music.title}</td>
-                    <td>{music.artist}</td>
-                    <td>{music.album}</td>
-                    <td>{music.release_date}</td>
-                    <td>{music.genre}</td>
+                    <td>{songs.title}</td>
+                    <td>{songs.artist}</td>
+                    <td>{songs.album}</td>
+                    <td>{songs.release_date}</td>
+                    <td>{songs.genre}</td>
                 </tr>
                 );
             })}
