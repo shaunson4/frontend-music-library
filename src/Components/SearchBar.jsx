@@ -9,6 +9,14 @@ const SearchSong = (props) => {
     
     function handleSubmit (event) {
         event.preventDefault();
+        let newSong = {
+            title: title,
+            artist: artist,
+            album: album,
+            genre: genre,
+            date: date,
+        };
+        console.log(newSong)
     }
 
     return (
